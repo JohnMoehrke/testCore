@@ -4,6 +4,10 @@ Feb 2023
 
 Still broken
 
+## CI Build
+
+http://build.fhir.org/ig/JohnMoehrke/testCore/branches/main/index.html
+
 ## testCore
 
 This creates a profile on Condition and Diagnos from US-Core, which produces errors in the build. The errors seem to be related to Mapping, not profiling. They seem to be related to mapping to .code.text and also .code.coding; and seem to go away when only one is mapped.
