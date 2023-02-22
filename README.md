@@ -1,17 +1,26 @@
-# Status
+## Status
 
-December 2022
+Feb 2023
 
-Seems to be fixed. The medication shows fine with contained resources too.
+Still broken
 
-# testMed
+## testCore
 
-MedicationStatement testing for contained error.
+This creates a profile on Condition and Diagnos from US-Core, which produces errors in the build. The errors seem to be related to Mapping, not profiling. They seem to be related to mapping to .code.text and also .code.coding; and seem to go away when only one is mapped.
 
-	The link '#in-Pharmacy' for "#in-Pharmacy" cannot be resolved (valid targets: [ex-medication-0, performers, segment-header, in-Request, publish-box, bottom, mr-nav, example-medicationstatement-example-of-a-medication-r4-minimal, segment-post-footer, mr-logo, ig-status, top, root, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb, in-Dispense])
+https://chat.fhir.org/#narrow/stream/179175-argonaut/topic/derived.20profiles.20are.20erroring
 
-the in-Pharmacy is used by the in-Dispense, but is not referenced by the medicationStatement. So narrative creation seems to get confused.
+so, still a problem somewhere.
 
-ci-build - http://build.fhir.org/ig/JohnMoehrke/testMed/branches/main/index.html
+If I profile US-Core Immunization, I can have maps for both .vaccineCode.text and .vaccineCode.coding
 
-.
+But, same is not true of profiling US-Core DiagnosticReport and Condition relative to .code
+
+Yet, I can profile FHIR core with DiagnosticReport and Condition and not have a problem mapping to .code.text and .code.coding
+
+I wonder if the tooling treats .code differently?
+
+### Source
+
+The source code for this Implementation Guide can be found on [GitHub](https://github.com/JohnMoehrke/testCore)
+
