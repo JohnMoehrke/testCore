@@ -85,7 +85,7 @@ Example from a mock labReportTO
 """
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/v2-0074#LAB
+* category[LaboratorySlice] = http://terminology.hl7.org/CodeSystem/v2-0074#LAB
 * code.text = "LR MICROBIOLOGY REPORT"
 * code = LOINC#79381-0
 * subject = Reference(Patient/ex-patient)
