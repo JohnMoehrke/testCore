@@ -28,4 +28,4 @@ I wonder if the tooling treats .code differently?
 
 The source code for this Implementation Guide can be found on [GitHub](https://github.com/JohnMoehrke/testCore)
 
-.
+..
