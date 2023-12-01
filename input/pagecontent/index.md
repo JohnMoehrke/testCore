@@ -1,5 +1,7 @@
 ### testCore
 
+**Fixed at some point by Nov 2023**
+
 This creates a profile on Condition and Diagnos from US-Core, which produces errors in the build. The errors seem to be related to Mapping, not profiling. They seem to be related to mapping to .code.text and also .code.coding; and seem to go away when only one is mapped.
 
 https://chat.fhir.org/#narrow/stream/179175-argonaut/topic/derived.20profiles.20are.20erroring
