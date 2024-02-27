@@ -182,4 +182,4 @@ Usage: #example
 * subject = Reference(Patient/ex-patient)
 * effectiveDateTime = "2004-01-21T11:01:00Z"
 * performer.display = "self"
-* valueInteger.value = 0
+* valueInteger = 0
