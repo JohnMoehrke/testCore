@@ -170,3 +170,16 @@ Usage: #example
 * address.state = "WI"
 * address.country = "USA"
 
+Instance: ex-pain
+InstanceOf: Observation
+Title: "PAIN of zero"
+Description: "simple observation for pain of value zero"
+Usage: #example
+* status = #final
+* category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
+* code.coding = http://loinc.org#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
+* code.text = "PAIN"
+* subject = Reference(Patient/ex-patient)
+* effectiveDateTime = "2004-01-21T11:01:00Z"
+* performer.display = "self"
+* valueInteger.value = 0
