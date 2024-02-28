@@ -46,7 +46,7 @@ Example from a mock
 * identifier[=].system = "https://example.org/ProblemTO.id"
 * identifier[=].use = #usual
 * code.text = "Hypertension (ICD-9-CM 401.9)"
-* code.coding = http://terminology.hl7.org/CodeSystem/icd9cm#401.9
+* code.coding = http://hl7.org/fhir/sid/icd-9-cm#401.9
 //* asserter = Reference(Practitioner/ex-MHV-practitioner-110)
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#unconfirmed
