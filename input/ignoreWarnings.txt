@@ -5,6 +5,6 @@
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
 # know these things and they are not important
-INFORMATION: Condition/ex-condition-1: Condition.category[0]: Reference to draft item http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
-INFORMATION: Condition/ex-condition-1: Condition.code.coding[0]: The definition for the Code System with URI 'http://terminology.hl7.org/CodeSystem/icd9cm' doesnt provide any codes so the code cannot be validated
 WARNING: Immunization/ex-immunization-1: Immunization.vaccineCode: No code provided, and a code should be provided from the value set 'CVX Vaccines Administered Vaccine Set' (http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6|20210630)
+INFORMATION: Condition/ex-condition-1: Condition.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/condition-category|0.5.0
+WARNING: Condition/ex-condition-1: Condition.code.coding[0].code: Unknown Code '401.9' in the system 'http://hl7.org/fhir/sid/icd-9-cm' version '2015' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
